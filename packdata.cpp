@@ -29,7 +29,7 @@ int main(int argc, char *argv[]){
     ofstream meta;
     meta.open("./package/meta.json");
     meta << "{\n";
-    meta << "\t\"name\": \"Data Structures and Anticheating\",\n";
+    meta << "\t\"name\": \"[HW3.P4] Data Structures and Anticheating\",\n";
     meta << "\t\"timeLimit\": " << tl << ",\n";
     meta << "\t\"memLimit\": " << ml << ",\n";
     meta << "\t\"testdata\": [\n";
@@ -43,7 +43,7 @@ int main(int argc, char *argv[]){
         }
         meta << "]\n";
         meta << "\t\t}";
-        if (i < 6) meta << ',';
+        if (i < testcasecnt-1) meta << ',';
         meta << '\n';
     }
     meta << "\t]\n";

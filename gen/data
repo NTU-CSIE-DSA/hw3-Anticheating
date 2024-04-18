@@ -7,14 +7,14 @@ manual 3.in
 @include samples
 gen_rand 5 5
 gen_rand 100 1000
-gen_rand 100 1000000
+gen_rand 100 5000000
 
 @subtask s2
 @include s1
-gen_rand 5000 1000000
-gen_rand 5000 1000000
+gen_rand 5000 5000000
+gen_rand 5000 5000000
 
 @subtask s3
 @include s2
-gen_rand 5000000 1000000
-gen_rand 5000000 1000000
+gen_rand 5000000 5000000
+gen_rand 5000000 5000000

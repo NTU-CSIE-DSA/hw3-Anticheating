@@ -10,6 +10,9 @@ gen_rand 100 1000 26
 gen_rand 100 5000000 26
 gen_rand 100 100 1
 gen_rand 100 100 2
+gen_pattern 100 100 ab ab
+gen_pattern 81 100 baba abab
+gen_pattern 79 100 abba abba
 
 @subtask s2
 @include s1
@@ -17,6 +20,9 @@ gen_rand 5000 5000000 26
 gen_rand 5000 5000000 26
 gen_rand 5000 5000000 1
 gen_rand 5000 5000000 2
+gen_pattern 5000 5000 ab ab
+gen_pattern 5000 5000 abc ab
+gen_pattern 5000 5000 aac aa
 
 @subtask s3
 @include s2
@@ -24,3 +30,7 @@ gen_rand 5000000 5000000 26
 gen_rand 5000000 5000000 26
 gen_rand 5000000 5000000 1
 gen_rand 5000000 5000000 2
+gen_pattern 5000000 5000000 ab ab
+gen_pattern 5000000 5000000 abb aab
+gen_pattern 5000000 5000000 aab aab
+gen_pattern 5000000 5000000 abba aabb

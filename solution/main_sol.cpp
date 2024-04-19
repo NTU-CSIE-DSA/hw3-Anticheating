@@ -4,17 +4,10 @@
 
 char s[maxn], t[maxn];
 int kmp[maxn], kmp_depth[maxn], match_cnt[maxn];
-void moveRight1(char s[], int l){
-    s[l+1] = 0;
-    for (int i=l;i>0;--i) s[i] = s[i-1];
-}
 int main(){
     scanf("%s%s", s, t);
     int m = strlen(s), l = strlen(t);
-    // moveRight1(s, m);
-    // moveRight1(t, l);
     kmp_depth[0] = 1;
-    // kmp[0] = -1;
     for (int i=1, j=0;i<l;++i){
         while (j && t[i] != t[j]) j = kmp[j-1];
         if (t[i] == t[j]) ++j;

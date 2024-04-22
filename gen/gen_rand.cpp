@@ -9,5 +9,6 @@ int main(int argc, char* argv[]){
     assert(1 <= dict_size && dict_size <= 26);
     int st = rnd.next(27 - dict_size);
     string dict = string(1, 'a' + st) + "-" + string(1, 'a' + st + dict_size - 1);
+    if (dict_size == 1) dict = "a-a";
     cout << jngen::StringRandom::random(slen, dict) << '\n' << jngen::StringRandom::random(tlen, dict) << '\n';
 }

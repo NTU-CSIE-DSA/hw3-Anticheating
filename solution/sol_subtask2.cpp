@@ -7,5 +7,5 @@ char s[maxn], t[maxn];
 int main(){
     scanf("%s%s", s, t);
     long long n = strlen(s), m = strlen(t);
-    for (int i=1;i<=m;++i) printf("%lld\n", (n - i + 1) * i);
+    for (int i=1;i<=m;++i) printf("%lld\n", (n - i + 1 > 0 ? n - i + 1 : 0ll) * i);
 }

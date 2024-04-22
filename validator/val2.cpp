@@ -6,6 +6,7 @@ int main(){
     registerValidation();
     string s = inf.readWord();
     ensure(s.size() <= 5000000);
+    ensure(s[0] == 'a');
     for (int i=1;i<s.size();++i) ensure(s[i] == s[i-1]);
     inf.readEoln();
     string t = inf.readWord();

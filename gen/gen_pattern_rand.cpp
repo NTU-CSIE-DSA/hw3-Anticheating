@@ -12,7 +12,7 @@ int main(int argc, char* argv[]){
     int pattern_length = atoi(argv[3]);
     double break_rate = atof(argv[4]);
     string pat(pattern_length, 'a');
-    for (int i=0;i<pattern_length;++i) pat[i] = rnd.next((int)'a', (int)'z'+1);
+    for (int i=0;i<pattern_length;++i) pat[i] = rnd.next((int)'a', (int)'z');
 
     for (auto &c:pat) c = remap[c - 'a'];
     // for (auto &c:patb) c = remap[c - 'a'];

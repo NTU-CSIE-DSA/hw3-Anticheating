@@ -8,6 +8,8 @@ manual 3.in
 gen_rand 5 5 26
 gen_rand 100 1000 26
 gen_rand 100 5000000 26
+gen_rand 100 4999999 26
+gen_rand 100 4999998 26
 gen_rand 100 100 1
 gen_rand 100 100 2
 gen_pattern 100 100 ab ab
@@ -24,6 +26,10 @@ gen_rand 5000000 5000000 1
 gen_rand 3800000 5000000 1
 gen_rand 4000000 5000000 1
 gen_rand 2 5000000 1
+gen_rand 100 5000000 1
+gen_rand 5000000 10000 1
+gen_rand 5000000 100 1
+gen_rand 5000000 2 1
 
 @subtask s3
 @include s1
@@ -39,6 +45,29 @@ gen_pattern 5000 5000 aac aa
 gen_pattern_with_break 5000 5000 ab ab 0.3
 gen_pattern_with_break 5000 5000 ab ab 0.2
 gen_pattern_with_break 5000 5000 baab aabb 0.2
+gen_pattern_with_break 5000 5000000 aaaaa aaaaa 0.5
+gen_pattern_with_break 5000 5000000 abacaba abac 0.1
+gen_pattern_with_break 5000 5000000 abacaba abacaba 0.2
+gen_pattern_with_break_random 5000 5000 3 3 1
+gen_pattern_with_break_random 5000 5000 3 3 2
+gen_pattern_with_break_random 5000 5000000 5 2 1
+gen_pattern_with_break_random 5000 5000000 5 2 2
+gen_pattern_with_break_random 5000 5000000 7 3 1
+gen_pattern_with_break_random 5000 5000000 7 3 2
+gen_pattern_with_break_random 5000 5000000 10 2 1
+gen_pattern_with_break_random 5000 5000000 10 2 2
+gen_pattern_with_break_random 5000 5000000 10 5 1
+gen_pattern_with_break_random 5000 5000000 10 5 2
+gen_pattern_with_break 5000 10 ab ab 0.3
+gen_pattern_with_break 5000 100 ab ab 0.2
+gen_pattern_with_break 5000 100 baab aabb 0.2
+gen_pattern_with_break 5000 100 aaaaa aaaaa 0.5
+gen_pattern_with_break 5000 100 abacaba abac 0.1
+gen_pattern_with_break 5000 100 abacaba abacaba 0.2
+gen_pattern_with_break_random 5000 100 5 2 1
+gen_pattern_with_break_random 5000 100 5 2 2
+gen_pattern_with_break_random 5000 49 10 3 1
+gen_pattern_with_break_random 5000 49 10 3 2
 
 @subtask s4
 @include s2
@@ -56,3 +85,26 @@ gen_pattern_with_break 5000000 5000000 ab ab 0.08
 gen_pattern_with_break 5000000 5000000 abb ab 0.2
 gen_pattern_with_break 5000000 5000000 abba aabb 0.01
 gen_pattern_with_break 5000000 5000000 ab ab 0.2
+gen_pattern_with_break 5000000 5000000 aaaaa aaaaa 0.5
+gen_pattern_with_break 5000000 5000000 abacaba abac 0.1
+gen_pattern_with_break 5000000 5000000 abacaba abacaba 0.2
+gen_pattern_with_break_random 5000000 5000 3 3 1
+gen_pattern_with_break_random 5000000 5000 3 3 2
+gen_pattern_with_break_random 5000000 5000000 5 2 1
+gen_pattern_with_break_random 5000000 5000000 5 2 2
+gen_pattern_with_break_random 5000000 5000000 7 3 1
+gen_pattern_with_break_random 5000000 5000000 7 3 2
+gen_pattern_with_break_random 5000000 5000000 10 2 1
+gen_pattern_with_break_random 5000000 5000000 10 2 2
+gen_pattern_with_break_random 5000000 5000000 10 5 1
+gen_pattern_with_break_random 5000000 5000000 10 5 2
+gen_pattern_with_break 5000000 1000 ab ab 0.3
+gen_pattern_with_break 5000000 1000 ab ab 0.2
+gen_pattern_with_break 5000000 1000 baab aabb 0.2
+gen_pattern_with_break 5000000 1000 aaaaa aaaaa 0.5
+gen_pattern_with_break 5000000 1000 abacaba abac 0.1
+gen_pattern_with_break 5000000 1000 abacaba abacaba 0.2
+gen_pattern_with_break_random 5000000 1000 5 2 1
+gen_pattern_with_break_random 5000000 1000 5 2 2
+gen_pattern_with_break_random 5000000 4949 10 3 1
+gen_pattern_with_break_random 5000000 4949 10 3 2

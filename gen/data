@@ -5,6 +5,8 @@ manual 3.in
 
 @subtask s1
 @include samples
+gen_pattern_rand 100 100 5 0
+gen_pattern_rand 100 100 5 0.1
 gen_rand 5 5 26
 gen_rand 100 1000 26
 gen_rand 100 5000000 26
@@ -68,6 +70,13 @@ gen_pattern_with_break_random 5000 100 5 2 1
 gen_pattern_with_break_random 5000 100 5 2 2
 gen_pattern_with_break_random 5000 49 10 3 1
 gen_pattern_with_break_random 5000 49 10 3 2
+gen_pattern_rand 5000 5000000 50 0.03
+gen_pattern_rand 5000 5000 100 0.1 1
+gen_pattern_rand 5000 5000 200 0.03 2
+gen_pattern_rand 5000 5000 8 0 3
+gen_pattern_rand 5000 5000 1000 0 4
+gen_pattern_rand 5000 5000 5 0.1 5
+gen_pattern_rand 5000 5000 10 0.1 6
 
 @subtask s4
 @include s2
@@ -108,3 +117,13 @@ gen_pattern_with_break_random 5000000 1000 5 2 1
 gen_pattern_with_break_random 5000000 1000 5 2 2
 gen_pattern_with_break_random 5000000 4949 10 3 1
 gen_pattern_with_break_random 5000000 4949 10 3 2
+gen_pattern_rand 5000000 5000000 10 0.01 1
+gen_pattern_rand 5000000 5000000 10 0.01 2
+gen_pattern_rand 5000000 5000000 10000 0.1 3
+gen_pattern_rand 5000000 5000000 10000 0.05 4
+gen_pattern_rand 5000000 5000000 500 0.07 5
+gen_pattern_rand 5000000 5000000 500 0.05 6
+gen_pattern_rand 5000000 5000000 999 0.03 7
+gen_pattern_rand 5000000 5000000 300 0.03 8
+gen_pattern_rand 5000000 5000000 100000 0.1 9
+gen_pattern_rand 5000000 5000000 1000000 0.4 10

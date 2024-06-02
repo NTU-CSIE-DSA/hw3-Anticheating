@@ -7,7 +7,7 @@ For counting the number of valid shifts, build the $\pi$ function for string $c$
 Then, use the KMP algorithm to determine how many occurrences of $c$ are in $s$. However, instead of looking for complete matches, record the length of the prefix of $c$ that has matched successfully at each step. This way, all $\pi^i(n)$ also match successfully, allowing us to count matches using this method. That is, if there is a valid shift with substring length $\ell$, then there is also a valid shift with substring length $\pi^k(\ell)$.
 
 For calculating the likelihood of prefix $i$, it is simply the minimum $j + 1$ where $\pi^j(i) = 0$. We can denote this value as the depth of KMP, that is,
-$$\texttt{kmp\\_depth[i]} = \texttt{kmp\\_depth[\text{$\pi$}(i)]} + 1$$
+$$\texttt{kmp\\_depth[i]} = \texttt{kmp\\_depth[\text{\\(\pi\\)}(i)]} + 1$$
 
 ## Sample Code 
 ```c
@@ -68,4 +68,4 @@ int main(){
 3. If the strings $S$ and $C$ consist of $5\times 10^6$ `A`s, the largest number in the output is about $\left(\frac{5\times 10^6}{2}\right)^2$, so not using `long long` will result in a Wrong Answer.
 
 ## Coding Tips
-1. Instead of directly adding $\texttt{match\\_cnt[i]}$ to $\texttt{match\\_cnt[\text{\(\pi^k\)}(i)]}$ for all $1\leq k\leq \texttt{kmp\\_depth[i]}$, we can just add $\texttt{match\\_cnt[i]}$ to $\texttt{match\\_cnt[\text{\(\pi\)}(i)]}$ for each $i$.
+1. Instead of directly adding $\texttt{match\\_cnt[i]}$ to $\texttt{match\\_cnt[\text{\\(\pi^k\\)}(i)]}$ for all $1\leq k\leq \texttt{kmp\\_depth[i]}$, we can just add $\texttt{match\\_cnt[i]}$ to $\texttt{match\\_cnt[\text{\\(\pi\\)}(i)]}$ for each $i$.
